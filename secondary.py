@@ -12,14 +12,19 @@ def generate():
     charcount = 0   
     characters = [] 
 
-    for files in os.walk(dir):
+    for root, dirs, files in os.walk(dir):
         for items in files:
-            if name in items:
-                log = open(name, 'a')
-                isWrite = False
-            elif name not in items:
-                log = open(name, 'w')
+            print(items, name)
+            if items != name:
                 isWrite = True
+            elif items == name:
+                isWrite = False
+                break
+    
+    if isWrite == True:
+        log = open(name, 'w')
+    elif isWrite == False:
+        log = open(name, 'a')
             
     toWrite = []
     os.system('cls')
