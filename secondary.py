@@ -4,34 +4,28 @@ import random
 import os
 
 symbols = ['!', '?', '$', '&', '#', '@']  
-dir = os.getcwd()
+cdir = os.getcwd()
 name = 'passwords.txt'
 
 
 def generate():
     charcount = 0   
     characters = [] 
+    isWrite = True
 
-    for root, dirs, files in os.walk(dir):
+    for root, dirs, files in os.walk(cdir):
         for items in files:
-            print(items + '|' + name)
-            if items != name:
-                isWrite = True
-                break
-            elif items == name:
+            print('Looking for ' + name + ' in ' + cdir + '| Found: ' + items)
+            if items == name:
                 isWrite = False
-                break
-            
-            break
 
     if isWrite == True:
-        log = open(name, 'w')
+        log = open('passwords.txt', 'w')
     elif isWrite == False:
-        log = open(name, 'a')
-            
+        log = open('passwords.txt', 'a')
+
     toWrite = []
     os.system('cls')
-    print(isWrite)
     passLength = int(input('Enter the length of password you want: '))
     passType = input('What will this password be used for?: ')  
     toWrite.append(passType)
