@@ -1,5 +1,3 @@
-from fileinput import close
-from multiprocessing.resource_sharer import stop
 from secondary import * 
 import keyboard
 
