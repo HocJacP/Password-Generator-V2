@@ -14,13 +14,16 @@ def generate():
 
     for root, dirs, files in os.walk(dir):
         for items in files:
-            print(items, name)
+            print(items + '|' + name)
             if items != name:
                 isWrite = True
+                break
             elif items == name:
                 isWrite = False
                 break
-    
+            
+            break
+
     if isWrite == True:
         log = open(name, 'w')
     elif isWrite == False:
