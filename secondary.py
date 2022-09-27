@@ -15,7 +15,6 @@ def generate():
 
     for root, dirs, files in os.walk(cdir):
         for items in files:
-            print('Looking for ' + name + ' in ' + cdir + '| Found: ' + items)
             if items == name:
                 isWrite = False
 
