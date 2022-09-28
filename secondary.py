@@ -2,10 +2,8 @@ import string
 import random
 import os
 
-  
 cdir = os.getcwd()
 name = 'passwords.txt'
-
 
 def generate():
     charcount = 0   
