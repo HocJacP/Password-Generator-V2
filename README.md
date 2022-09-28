@@ -16,3 +16,8 @@ Storing passwords as plaintext is a considerable cybersecurity liability.
 Strongly consider keeping the files for this script in a hidden, encrypted, or otherwise secure location.
 I am not responsible for the breach of any accounts should someone gain access to your 'passwords.txt' file.
 Store passwords at your own risk
+
+### Notes for nerds
+
+For the less trusting individuals among you, you may be think that this script somehow sends me your passwords.
+If you care to look into the source code, you'll see that nowhere in the code does it "phone home".
