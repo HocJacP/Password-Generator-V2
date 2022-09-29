@@ -58,11 +58,7 @@ def generate():
                     characters.append(random.choice(symbols))
                     charcount = charcount + 1
                 elif useCustom == True:
-                    randomChar = random.choice(customSymbols)
-                    if randomChar == ' ':
-                        print('SPACE ERROR')
-                    else:
-                        characters.append(randomChar)
+                    characters.append(random.choice(customSymbols))
                     charcount += 1
         elif symbolsAllowed == False:
             charType = random.randint(1, 2) 
