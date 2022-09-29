@@ -1,8 +1,7 @@
 # Password-Generator-V2
 A simple Python password generator and logger.
 
-To install the required libraries, open a CMD prompt at the location of the install, and run the following: <br>
-pip install -r requirements.txt
+To install the required libraries, run the 'installReqs.bat' file.
 
 Simply download the files, and run main.py (Note: you will need to run the script with CMD, VSCode, Jupyter, ETC...)
 
