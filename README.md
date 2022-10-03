@@ -20,3 +20,6 @@ Store passwords at your own risk
 
 For the less trusting individuals among you, you may be think that this script somehow sends me your passwords.
 If you care to look into the source code, you'll see that nowhere in the code does it "phone home".
+
+## THIS IS A WORK IN PROGRESS
+It probably won't work perfectly, or even very well at times.
